@@ -9,9 +9,9 @@ describe NumeralsController do
       expect(get('/numerals')).to route_to('numerals#index')
     end
 
-    it "routes POST /numerals to :convert" do
+    it "routes POST /numerals/convert to :convert" do
 
-      expect(post('/numerals')).to route_to('numerals#convert')
+      expect(post('/numerals/convert')).to route_to('numerals#convert')
     end
   end
 end
