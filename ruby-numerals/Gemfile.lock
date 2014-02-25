@@ -56,6 +56,9 @@ GEM
     less-rails-bootstrap (3.1.1.0)
       less-rails (~> 2.4.2)
     libv8 (3.16.14.3)
+    linguistics (2.0.3)
+      loggability (~> 0.7)
+    loggability (0.10.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -138,6 +141,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   less-rails-bootstrap
+  linguistics
   rails (= 4.0.3)
   rspec-rails
   sass-rails (~> 4.0.0)
