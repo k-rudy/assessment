@@ -4,4 +4,6 @@ RubyNumerals::Application.routes.draw do
       post :convert
     end
   end
+  
+  root to: 'numerals#index'
 end
