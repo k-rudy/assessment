@@ -12,7 +12,11 @@ module Numerals
       # 
       # @return [ String ] humanized input
       def convert(input)
-        input.en.numwords.gsub('minus', 'minus ')
+        if input.present? 
+          input.en.numwords.gsub('minus', 'minus ')
+        else
+          ''
+        end
       end
     end
   end

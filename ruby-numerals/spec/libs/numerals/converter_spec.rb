@@ -21,5 +21,9 @@ describe Numerals::Converter do
     it 'returns empty string when string is not a number' do
       expect(subject.convert('testus')).to eq('')
     end
+    
+    it 'returns empty string when input is empty' do
+      expect(subject.convert('')).to eq('')
+    end
   end
 end

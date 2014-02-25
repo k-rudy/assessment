@@ -2,18 +2,21 @@
   
   <h1>Simple Numerals Converter</h1>
   
-  <%= form_tag convert_numerals_path, role: 'form' do %>
+  <%= form_tag convert_numerals_path, role: 'form', method: 'post' do %>
   
     <div class="form-group">
       <%= label_tag :number %>
       <%= text_field_tag :number, params[:number], type: 'number', class: 'form-control', placeholder: 'Enter number' %>
     </div>
   
-    <%= submit_tag 'Submit', class: 'btn btn-default' %>
+    <%= submit_tag 'Convert', class: 'btn btn-default' %>
     
   <% end %>
   
-  <% if @result %>
-    <p class="bg-primary"><%= @result %></p>
-  <% end %>
+  <div class="result panel panel-default">
+    <div class="panel-heading">Conversion result</div>
+    <div class="panel-body">
+      <%= @result %>
+    </div>
+  </div>
 </div>
